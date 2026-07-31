@@ -1,57 +1,75 @@
-# Contracts
+![phpstan-level](https://img.shields.io/badge/PHPStan-Level%209-brightgreen)
 
-A set of stable, framework‑independent contracts that define core architectural abstractions for PHP applications.
+# Container Contract
 
-These interfaces establish consistent patterns for dependency resolution, service lifecycle management, modular composition, and component interoperability, allowing different implementations to share a common foundation.
+A set of stable, framework‑independent contracts that define the core abstractions required to implement dependency injection containers in PHP.
 
-The goal of this monorepo is to offer **clear, explicit, and SOLID‑oriented contracts** that can be implemented by any framework, library, or application that follows Sourcerer's modular philosophy.
+These interfaces establish consistent patterns for service registration, lifecycle management, resolution strategies, and factory‑based instantiation, allowing different container implementations to share a common foundation.
 
-## 🧱 Architecture Philosophy
+The goal of this package is to provide clear, explicit, and SOLID‑oriented contracts that can be adopted by any container, framework, or modular application architecture.
 
-These contracts follow a strict set of principles:
-- Explicit over implicit
-- Factories over autowiring
-- Lifecycle over magic
-- Contracts over assumptions
-- Modularity over monolith
-- Agnostic over opinionated
+## ✨ Features
 
-They are designed to be implemented by any ecosystem that values clarity, predictability, and strong architectural boundaries.
+- **PSR‑11 compatible**  
+  Fully aligned with `Psr\Container\ContainerInterface`, ensuring interoperability with existing tooling.
+
+- **Explicit service registration**  
+  Register services using clear, intention‑revealing methods: `set()`, `bind()`, and `singleton()` — no autowiring, no magic.
+
+- **Factory‑based instantiation**  
+  Classes may implement `ServiceFactoryInterface` to control their own creation logic, ensuring predictable and testable instantiation.
+
+- **Provider lifecycle management**  
+  ServiceProviderInterface defines `register()`, `boot()`, and `terminate()` phases, enabling modular initialization and teardown.
+
+- **Framework‑agnostic design**  
+  Contracts do not assume any specific container implementation, allowing different ecosystems to adopt and extend them freely.
 
 ---
 
-## 📚 Packages
+## 📦 Installation
 
-### 1. `stougeiro/container-contract`
-Interfaces and contracts for implementing dependency injection containers in PHP, covering lifecycle handling, service resolution and factory-based instantiation.
+Install via Composer:
 
-🔗 **Repository:** [stougeiro/container-contract](https://github.com/stougeiro/contracts/tree/master/container-contract)
-
-
-📦 **Install**  
 ```bash
 composer require stougeiro/container-contract
 ```
+
+
+## 🔧 Implementations
+
+These contracts are designed to be implemented by any dependency injection container or modular application architecture.
+Below is a list of known implementations maintained by the community.
+
+- **stougeiro/container**  
+  Repository: https://github.com/stougeiro/container
+
+
+## 🚀 Usage Example
+
 
 ---
 
 ## 🧠 Why?
 
-Because architectural boundaries matter and explicit architecture scales. These contracts exist to separate what a component does from how it is implemented. By defining clear, stable interfaces, different containers, modules, and applications can interoperate without being tightly coupled to a specific framework or implementation.
+Because dependency injection should be explicit, predictable, and framework‑independent.
 
-This enables:
-- Predictable behavior
-- Replaceable implementations
-- Modular composition
-- Long‑term maintainability
-- Explicit and SOLID‑driven architecture
+Most containers rely on autowiring, reflection, or implicit resolution rules that make applications harder to reason about, harder to test, and harder to maintain over time.
+
+These contracts take the opposite approach:
+- No autowiring
+- No reflection magic
+- No hidden behavior
+
+By defining clear, stable interfaces, we separate what a container or provider does from how it is implemented.
+This allows different containers, modules, and applications to interoperate without being tightly coupled to a specific framework or resolution strategy.
 
 ---
 
 ## 🤝 Contributions
 
 Contributions are welcome.
-Feel free to open issues or submit pull requests in any of the contract repositories.
+Feel free to open issues or submit pull requests.
 
 <br><br>
 
