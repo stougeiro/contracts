@@ -5,7 +5,7 @@
 
     interface ServiceProviderManagerInterface
     {
-        public function add(ServiceProviderInterface $provider): void;
+        public function add(string $provider): void;
 
         public function register(): void;
 
