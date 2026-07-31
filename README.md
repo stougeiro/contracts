@@ -45,9 +45,6 @@ Below is a list of known implementations maintained by the community.
   Repository: https://github.com/stougeiro/container
 
 
-## 🚀 Usage Example
-
-
 ---
 
 ## 🧠 Why?
