@@ -27,8 +27,7 @@ They are designed to be implemented by any ecosystem that values clarity, predic
 ### 1. `stougeiro/container-contract`
 Interfaces and contracts for implementing dependency injection containers in PHP, covering lifecycle handling, service resolution and factory-based instantiation.
 
-🔗 **Repository:**  
-[stougeiro/container-contract](https://github.com/stougeiro/contracts/tree/master/container-contract)
+🔗 **Repository:** [stougeiro/container-contract](https://github.com/stougeiro/contracts/tree/master/container-contract)
 
 
 📦 **Install**  
