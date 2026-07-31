@@ -1,0 +1,12 @@
+{
+    "name": "stougeiro/contracts",
+    "description": "A set of stable, framework‑independent contracts that define core architectural abstractions for PHP applications.",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "container-contract",
+            "options": { "symlink": true }
+        }
+    ]
+}
