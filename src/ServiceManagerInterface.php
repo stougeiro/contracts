@@ -3,7 +3,7 @@
     namespace STDW\Contract\Container;
 
 
-    interface ServiceProviderManagerInterface
+    interface ServiceManagerInterface
     {
         public function add(string $provider): void;
 
