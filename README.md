@@ -41,7 +41,7 @@ composer require stougeiro/container-contract
 These contracts are designed to be implemented by any dependency injection container or modular application architecture.
 Below is a list of known implementations maintained by the community.
 
-- **stougeiro/container**  
+- `stougeiro/container`  
   Repository: https://github.com/stougeiro/container
 
 
