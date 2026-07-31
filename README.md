@@ -1,5 +1,3 @@
-![phpstan-level](https://img.shields.io/badge/PHPStan-Level%209-brightgreen)
-
 # Contracts
 
 A set of stable, framework‑independent contracts that define core architectural abstractions for PHP applications.

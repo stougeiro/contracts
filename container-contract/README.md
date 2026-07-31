@@ -1,3 +1,5 @@
+![phpstan-level](https://img.shields.io/badge/PHPStan-Level%209-brightgreen)
+
 # Container Contract
 
 A set of stable, framework‑independent contracts that define the core abstractions required to implement dependency injection containers in PHP.
