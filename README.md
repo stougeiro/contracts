@@ -1,3 +1,5 @@
+![phpstan-level](https://img.shields.io/badge/PHPStan-Level%209-brightgreen)
+
 # Contracts
 
 A set of stable, framework‑independent contracts that define core architectural abstractions for PHP applications.
@@ -25,10 +27,11 @@ They are designed to be implemented by any ecosystem that values clarity, predic
 ### 1. `stougeiro/container-contract`
 Interfaces and contracts for implementing dependency injection containers in PHP, covering lifecycle handling, service resolution and factory-based instantiation.
 
-📍 Repository:  
-https://github.com/stougeiro/container-contract
+🔗 **Repository:**  
+[stougeiro/container-contract](https://github.com/stougeiro/contracts/tree/master/container-contract)
 
-📦 Install:
+
+📦 **Install**  
 ```bash
 composer require stougeiro/container-contract
 ```
